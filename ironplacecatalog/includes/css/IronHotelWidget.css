@@ -1,0 +1,441 @@
+ .mapboxgl-ctrl-attrib-button, .mapboxgl-ctrl-attrib.mapboxgl-compact {
+     display: none !important;
+}
+ #sidebarToggle {
+     position: relative;
+     top: 10px;
+     left: 10px;
+     z-index: 99999;
+    /* Ensure it's above other elements */
+     background-color: #007bff;
+    /* Blue background */
+     color: white;
+     border: none;
+     border-radius: 4px;
+     padding: 10px 15px;
+     font-size: 16px;
+     cursor: pointer;
+     box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+     transition: left 0.3s;
+     display: none;
+}
+ #sidebarToggle:hover {
+     background-color: #0056b3;
+    /* Darker blue on hover */
+}
+ .map-overlay {
+     display: none;
+     position: absolute;
+     top: 0;
+     left: 0;
+     right: 0;
+     bottom: 0;
+     background: rgba(0, 0, 0, 0.7);
+    /* Semi-transparent black */
+     z-index: 999;
+    /* Below the toggle button and sidebar */
+}
+ #IronHotelWidgetContainer {
+     position: relstive !important;
+     display: flex !important;
+}
+
+/* Marker tweaks */
+ #IronHotelWidgetContainer .mapboxgl-popup-close-button {
+     display: none;
+}
+ #IronHotelWidgetContainer .mapboxgl-popup-content {
+     font: 400 15px/22px 'Source Sans Pro', 'Helvetica Neue', sans-serif;
+     padding: 0;
+     width: 210px;
+    /*pointer-events: none !important;
+    */
+}
+ #IronHotelWidgetContainer .mapboxgl-popup-content h3 {
+     background: #91c949;
+     color: #008;
+     margin: 0;
+     padding: 10px;
+     border-radius: 3px 3px 0 0;
+     font-weight: 500;
+     font-size: 14pt;
+     margin-top: -15px;
+     margin-left: -11px;
+     text-align: center;
+     width: 210px;
+}
+ #IronHotelWidgetContainer .mapboxgl-popup-content h4 {
+     margin: 0;
+     padding: 10px;
+     font-weight: 200;
+     font-size: 12pt;
+     color: #404040;
+}
+ #IronHotelWidgetContainer .mapboxgl-popup-content div {
+     padding: 10px;
+}
+ #IronHotelWidgetContainer .mapboxgl-popup-anchor-top > .mapboxgl-popup-content {
+    /*margin-top: 15px;
+    */
+}
+ #IronHotelWidgetContainer .mapboxgl-popup-anchor-top > .mapboxgl-popup-tip {
+     border-bottom-color: #91c949;
+}
+ #IronHotelWidgetContainer .mapboxgl-popup, .mapboxgl-popup h5, .mapboxgl-popup p{
+     color: #000000 !important;
+}
+ #IronHotelWidgetContainer .mapboxgl-popup h5{
+     font-size: 10pt;
+}
+ #IronHotelWidgetContainer .popup-container {
+     font-family: Arial, sans-serif;
+     background-color: #f9f9f9;
+     border: 1px solid #ddd;
+     padding: 15px;
+     border-radius: 5px;
+     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+     width: 210px;
+}
+ #IronHotelWidgetContainer .popup-container h2 {
+     color: #333;
+     font-size: 18px;
+     margin-bottom: 10px;
+}
+ #IronHotelWidgetContainer .popup-container p {
+     color: #555;
+     font-size: 14px;
+     line-height: 1.6;
+     margin: 4px 0;
+}
+ #IronHotelWidgetContainer .popup-container .stars {
+     color: #f0c040;
+    /* Gold color */
+     font-size: 16px;
+}
+ #IronHotelWidgetContainer .popup-container a {
+     display: inline-block;
+     margin-top: 10px;
+     color: #007bff;
+     text-decoration: none;
+}
+ #IronHotelWidgetContainer .popup-container a:hover {
+     text-decoration: underline;
+}
+ #IronHotelWidgetContainer * {
+     box-sizing: border-box;
+}
+ #IronHotelWidgetContainer {
+     color: #404040;
+     font: 400 15px/22px 'Source Sans Pro', 'Helvetica Neue', sans-serif;
+     margin: 0;
+     padding: 0;
+    /*-webkit-font-smoothing: antialiased;
+    */
+     position: relative;
+}
+ #IronHotelWidgetContainer h1 {
+     font-size: 22px;
+     margin: 0;
+     font-weight: 400;
+     line-height: 20px;
+     padding: 20px 2px;
+}
+ #IronHotelWidgetContainer a {
+     color: #404040;
+     text-decoration: none;
+}
+ #IronHotelWidgetContainer a:hover {
+     color: #101010;
+}
+/* The page is split between map and sidebar - the sidebar gets 1/3, map gets 2/3 of the page. You can adjust this to your personal liking. */
+ #IronHotelWidgetContainer #queryForm {
+     overflow: hidden;
+}
+ #IronHotelWidgetContainer .sidebar {
+     position: absolute;
+     top: 0;
+     left: 0;
+     overflow: hidden;
+     border-right: 1px solid rgb(0 0 0 / 25%);
+     width: 35%;
+     height: 100%;
+     background-color: #fff;
+}
+ #IronHotelWidgetContainer #mapIronHotel {
+     position: absolute;
+     left: 35%;
+     width: 65%;
+     height: 100%;
+     top: 0;
+     bottom: 0;
+}
+ #IronHotelWidgetContainer #separator{
+     position: absolute;
+     left: 33%;
+     width: 2%;
+     top: 0;
+     bottom: 0;
+     height: 100%;
+     background-color: #000;
+}
+ #IronHotelWidgetContainer .heading {
+     background: #00853e;
+     border-bottom: 1px solid #eee;
+     height: 60px;
+     line-height: 60px;
+     padding: 0 10px;
+}
+ #IronHotelWidgetContainer .listings {
+     height: 100%;
+     padding-bottom: 60px;
+}
+ #IronHotelWidgetContainer #listings{
+     overflow: auto;
+}
+ #IronHotelWidgetContainer .listings .item {
+     border-bottom: 1px solid #eee;
+     padding: 10px;
+     text-decoration: none;
+}
+ #IronHotelWidgetContainer .listings .item:last-child {
+     border-bottom: none;
+}
+ #IronHotelWidgetContainer .listings h4 {
+     color: #fff;
+}
+ #IronHotelWidgetContainer .listings .item .title {
+     display: block;
+     color: #00853e;
+     font-weight: 700;
+     cursor: pointer;
+}
+ #IronHotelWidgetContainer .listings .item .title small {
+     font-weight: 400;
+}
+ #IronHotelWidgetContainer .listings .item.active .title, #IronHotelWidgetContainer .listings .item .title:hover {
+     color: #8cc63f;
+}
+ #IronHotelWidgetContainer .listings .item.active {
+     background-color: #f8f8f8;
+}
+ #IronHotelWidgetContainer ::-webkit-scrollbar {
+     width: 3px;
+     height: 3px;
+     border-left: 0;
+     background: rgba(0, 0, 0, 0.1);
+}
+ #IronHotelWidgetContainer ::-webkit-scrollbar-track {
+     background: none;
+}
+ #IronHotelWidgetContainer ::-webkit-scrollbar-thumb {
+     background: #00853e;
+     border-radius: 0;
+}
+ #IronHotelWidgetContainer .marker {
+     border: none;
+     cursor: pointer;
+     height: 64px;
+     width: 50px;
+     background-size: contain;
+     background-repeat: no-repeat;
+}
+ #IronHotelWidgetContainer .markerUser {
+     border: none;
+     cursor: pointer;
+     height: 72px;
+     width: 50px;
+     background-size: contain;
+     background-repeat: no-repeat;
+}
+ #IronHotelWidgetContainer .mapboxgl-popup {
+     padding-bottom: 50px;
+}
+ #queryFormFilters{
+     display: none;
+}
+ #IronHotelWidgetContainer .loader {
+     border: 5px solid #f3f3f3;
+    /* Light grey */
+     border-top: 5px solid #3498db;
+    /* Blue */
+     border-radius: 50%;
+     width: 30px;
+     height: 30px;
+     animation: spin 2s linear infinite;
+     color: #000;
+     float: left;
+}
+ @keyframes spin {
+     0% {
+         transform: rotate(0deg);
+    }
+     100% {
+         transform: rotate(360deg);
+    }
+}
+ #IronHotelWidgetContainer .sidebar {
+     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+ #IronHotelWidgetContainer .sidebar .heading {
+     margin-bottom: 20px;
+}
+ #IronHotelWidgetContainer .sidebar h1 {
+     margin: 0;
+     padding: 15px;
+     color: #fff;
+}
+ #IronHotelWidgetContainer .sidebar h4 {
+     margin: 0;
+     padding-bottom: 5px;
+     color: #000;
+}
+ #IronHotelWidgetContainer #queryForm {
+     margin-bottom: 20px;
+     padding: 20px;
+}
+ #IronHotelWidgetContainer #queryForm label {
+     display: block;
+     margin-bottom: 5px;
+     color: #666;
+}
+ #IronHotelWidgetContainer #queryForm input[type="text"], #IronHotelWidgetContainer #queryForm select {
+     width: 100%;
+     padding: 5px;
+     margin-bottom: 10px;
+     border: 1px solid #ddd;
+     border-radius: 4px;
+}
+ #IronHotelWidgetContainer #submitButton, #IronHotelWidgetContainer #newSearch {
+     background-color: #007bff;
+     color: white;
+     padding: 10px 15px;
+     border: none;
+     border-radius: 4px;
+     cursor: pointer;
+}
+ #IronHotelWidgetContainer #submitButton:hover, #IronHotelWidgetContainer #newSearch {
+     background-color: #0056b3;
+}
+ #IronHotelWidgetContainer #results {
+     margin-bottom: 10px;
+}
+ #IronHotelWidgetContainer .listings .item {
+     border-bottom: 1px solid #eee;
+     padding: 10px 0;
+}
+ #IronHotelWidgetContainer .listings .item:last-child {
+     border-bottom: none;
+}
+ #IronHotelWidgetContainer .listings .title {
+     color: #007bff;
+     text-decoration: none;
+     font-weight: bold;
+     cursor: pointer;
+}
+ #IronHotelWidgetContainer .listings .title:hover {
+     text-decoration: underline;
+}
+ #IronHotelWidgetContainer .sidebar p {
+     margin-bottom: 5px;
+}
+ #IronHotelWidgetContainer .sidebar p a{
+     color;
+     blue;
+}
+ #IronHotelWidgetContainer .map-controls-daytime {
+     position: absolute;
+     right: 1px;
+     z-index: 99;
+    /* display: flex;
+     */
+     top: 150px;
+}
+ #IronHotelWidgetContainer .map-button{
+     margin-left: 5px;
+     margin-right: 5px;
+}
+ #IronHotelWidgetContainer .inlineInputWithLabel{
+     display: inline !important;
+}
+ #IronHotelWidgetContainer #queryForm #countrySelectLabel, #IronHotelWidgetContainer #queryForm #countrySelect{
+     display: none;
+}
+ #IronHotelWidgetContainer #results{
+     margin-top: 10px;
+     color: #007bff;
+}
+ #IronHotelWidgetContainer #results p b{
+     text-decoration: none;
+     font-weight: 700;
+}
+ #IronHotelWidgetContainer .accordion {
+     background-color: #eee;
+     color: #444;
+     cursor: pointer;
+     padding: 18px;
+     width: 100%;
+     border: none;
+     text-align: left;
+     outline: none;
+     font-size: 15px;
+     transition: 0.4s;
+}
+ #IronHotelWidgetContainer .active, #IronHotelWidgetContainer .accordion:hover {
+     background-color: #ccc;
+}
+ #IronHotelWidgetContainer .panel {
+     padding: 0 18px;
+     display: none;
+     background-color: white;
+     overflow: hidden;
+     transition: max-height 0.2s ease-out;
+    /*max-height: 0px;
+    */
+}
+ #IronHotelWidgetContainer #newSearch{
+     display: none;
+}
+
+/* Responsive layout for mobile */
+ @media (max-width: 768px) {
+     .map-overlay.open{
+         display: block;
+    }
+     #sidebarToggle {
+        /* top: 3%;
+         left: 20%;
+         */
+         display: block;
+         width: 50px;
+         height: 35px;
+    }
+     #IronHotelWidgetContainer .sidebar {
+        /*position: fixed !important;
+        */
+         left: -100% !important;
+        /* Start off-screen */
+         width: 80% !important;
+         height: 100% !important;
+         z-index: 9999 !important;
+         transition: left 0.3s;
+         top: inherit !important;
+    }
+     #IronHotelWidgetContainer #mapIronHotel {
+         width: 100% !important;
+    }
+     #IronHotelWidgetContainer #mapIronHotel {
+         position: absolute !important;
+         left: 0 !important;
+         height: 100% !important;
+         top: 0 !important;
+         bottom: inherit !important;
+    }
+     #IronHotelWidgetContainer .sidebar.open {
+         left: 0 !important;
+        /* Slide in */
+    }
+     #IronHotelWidgetContainer #sidebarToggle.open {
+         left: 60% !important;
+        /* Slide in */
+    }
+}
